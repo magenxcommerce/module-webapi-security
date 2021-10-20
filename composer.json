@@ -1,0 +1,29 @@
+{
+    "name": "magenxcommerce/module-webapi-security",
+    "description": "WebapiSecurity module provides option to loosen security on some webapi resources.",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magenxcommerce/framework": "103.0.*",
+        "magenxcommerce/module-webapi": "100.4.*"
+    },
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\WebapiSecurity\\": ""
+        }
+    },
+    "version": "100.4.0",
+    "replace": {
+        "magento/module-webapi-security": "*"
+    }
+}
